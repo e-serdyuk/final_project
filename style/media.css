@@ -1,0 +1,152 @@
+@media only screen and (max-width: 1900px) {
+    .name {
+        height: 46px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .advantages p,
+    .advantages h2 {
+        font-size: 35px;
+    }
+    .advantages {
+        padding-top: 220px;
+        margin-top: -30%;
+    }
+    .categories {
+        padding: 0 0;
+        margin-bottom: 60px;
+    }
+    .category {
+        width: 32.6%
+    }
+    .category img {
+        height: 270px;
+    }
+    .category img:hover {
+        height: 275px;
+    }
+    .slide {
+        height: 75%;
+    }
+    .lots {
+        width: 46%;
+    }
+    .container {
+        width: 80%;
+    }
+    .price_detail,
+    .time_detail {
+        font-size: 20px;
+    }
+    .bets {
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .advantages p,
+    .advantages h2 {
+        font-size: 30px;
+    }
+    .advantages {
+        padding: 238px 3% 0 3%;
+        height: 450px;
+        margin-top: -76%;
+    }
+    .category {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 1%;
+    }
+    .categories h2 {
+        font-size: 30px;
+    }
+    .categories {
+        margin-bottom: 93%;
+    }
+    .slide {
+        height: 540px;
+    }
+    .category img {
+        height: auto;
+    }
+    .category img:hover {
+        height: auto;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .lots {
+        width: 46%;
+    }
+    .container {
+        width: 80%;
+    }
+    .add_button {
+        font-size: 15px;
+    }
+    .images {
+        padding-left: 10%;
+        width: 74%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .bets {
+        font-size: 18px;
+    }
+    .right_detail {
+        float: none;
+        padding-left: 10%;
+    }
+    .footer_elem {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .footer {
+        height: 340px;
+    }
+    .rights {
+        position: relative;
+        top: 0;
+    }
+    span.price,
+    span.time {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 689px) {
+    .advantages p,
+    .advantages h2 {
+        font-size: 24px;
+    }
+    .advantages {
+        padding-top: 60px;
+        height: 300px;
+        margin-top: -107%;
+    }
+    .slide {
+        height: 30%;
+    }
+    .lot {
+        margin: 0 auto;
+    }
+    .lots {
+        width: 75%;
+        padding-left: 12%;
+    }
+    .add input {
+        width: 60%;
+    }
+    .right_detail {
+        float: none;
+        padding-left: 14%;
+    }
+    .footer {
+        height: 240px;
+    }
+    .images {
+        padding-left: 14%;
+    }
+}

@@ -1,0 +1,81 @@
+﻿<html>
+   <head>
+      <title>Список лотов</title>
+      <meta charset="utf-8">
+      <link type="text/css" rel="stylesheet" href="style/style.css">
+      <link type="text/css" rel="stylesheet" href="style/media.css">
+   </head>
+   <body>
+      <div class="header">
+         <div class="logo">
+            <a href="index.html"><img src="images/main_logo.PNG"> </a> 
+         </div>
+         <div class="main_menu">
+            <span class="login_name"></span>
+            <a href="">Вход</a>
+            <a href="">Регистрация</a>
+         </div>
+      </div>
+      <div class="registration_div">
+         <div class="login">Войти Login<input type="text">Password<input type="password"><button class="button_login">Enter</button></div>
+         <div class="registration">Регистрация Login<input type="text">Password<input type="text"> <button class="button_registration">Register</button></div>
+      </div>
+      <div class="breadcrumbs"><a href="index.html">Главная</a></div>
+      <div class="container">
+         <div class="filter">
+            <p>Фильтры</p>
+            <p>Сортировать по цене</p>
+            <button class="filter_up">По возрастанию</button>
+            <button class="filter_down">По убыванию</button>
+            <p>Выберите ценовой диапазон</p>
+            <p>От<input type="text"></p>
+            <p>До<input type="text"></p>
+            <button class="filter_show">Отобразить</button>
+            <p class="input_categories"><input type="radio" name="category" value="all"> Все лоты<br>
+               <input type="radio" name="category" value="money"> Монеты<br>
+               <input type="radio" name="category" value="marki"> Марки<br>
+               <input type="radio" name="category" value="picture"> Картины
+            </p>
+            <button class="filter_categories">Отобразить категории</button>
+         </div>
+         <div class="lot"></div>
+      </div>
+      <ol id="pagin"> </ol>
+      <button class="filter_price">Добавить</button>
+      <div class="add">
+         <form action="">
+            <p>Введите имя лота <input type="text"   required></p>
+            <p>Введите стартовую цену <input type="number"  required></p>
+            <p>Введите главное фото <input type="text" value="images/" required></p>
+            <p>Введите описание <textarea rows="1" placeholder="" name="text" required></textarea></p>
+            <p>
+               Введите категорию 
+               <select name="category" placeholder="" id="" required>
+                  <option value="money">Монеты</option>
+                  <option value="marki">Марки</option>
+                  <option value="picture">Картины
+                  </option>
+               </select>
+            </p>
+            <p>Введите время окончания акциона <input type="text" placeholder="месяц/день/год" required></p>
+            <p>Введите дополнительное фото№1 <input type="text" value="images/" ></p>
+            <p>Введите дополнительное фото№2 <input type="text" value="images/" ></p>
+            <input type="submit" class="add_button filter_price" value="Добавить">
+         </form>
+      </div>
+      <div class="footer">
+         <div class="footer_elem footer_logo"><img src="images/main_logo_footer.PNG"></div>
+         <div class="footer_elem rights">© Auction, 2016 - 2017</div>
+         <div class="footer_elem socials">
+            <a href="https://uk-ua.facebook.com/" target="_blank"><img src="images/facebook.png"></a>
+            <a href="https://vk.com/" target="_blank"><img src="images/vk.png"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png"></a>
+            <a href="https://youtube.com" target="_blank"><img src="images/youtube.png"></a>
+            <a href="https://ok.ru" target="_blank"><img src="images/ok.png"></a>
+         </div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/js_filter.js" type="text/javascript"></script>
+      <script src="js/login.js" type="text/javascript"></script>
+   </body>
+</html>
