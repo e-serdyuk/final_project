@@ -17,20 +17,20 @@ jQuery(document).ready(function()
                 success: function(data)
                 {
                     localStorage.setItem("objectN", JSON.stringify(data));
+                    console.log("Считан json объект с помощью ajax")
 
                 }
             });
-
-
-            this.data = JSON.parse(localStorage.getItem("objectN"));
-
-            if (this.data == null)
+            function initialize_data() 
             {
-                location.reload();
+                 json.data = JSON.parse(localStorage.getItem("objectN"));
+                  console.log("Записано в json.data")
+
             }
 
+            setTimeout(initialize_data, 80)
 
-        }
+         }
         this.update = function(name, price, photo, description, category, time, photo1, photo2)
         {
             this.data.push(
@@ -90,9 +90,11 @@ jQuery(document).ready(function()
 
         this.printall = function()
         {
-
+            
+            console.log("Выводим на экран все категории")
             print(this.data);
             localStorage.setItem("object", JSON.stringify(this.data));
+            
         };
 
         this.update_cat = function(n)
@@ -201,7 +203,7 @@ jQuery(document).ready(function()
 
     var json = new Data();
     json.initialize();
-
+    
     $('.lot').on('click', '.name', function(event)
     {
         event.preventDefault();
@@ -245,7 +247,7 @@ jQuery(document).ready(function()
         }
 
     });
-
+    function before_print() {
     var id_category = window.location.href.split("?")[1].split("=")[1];
     if (id_category == 'money')
     {
@@ -288,8 +290,8 @@ jQuery(document).ready(function()
         var search = window.location.href.split("?")[1].split("=")[2];
         json.search(search);
     }
-
-
+    }
+    setTimeout(before_print, 200)
 
     var id_detail = window.location.href.split("?")[1].split("=")[1];
     var data_temp = JSON.parse(localStorage.getItem("object"));
